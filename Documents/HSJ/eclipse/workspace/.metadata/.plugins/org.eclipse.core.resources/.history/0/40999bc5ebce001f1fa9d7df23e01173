@@ -1,0 +1,14 @@
+package com.korit.crud;
+
+public class CrudApplication {
+
+	public static void main(String[] args) {
+		
+		// 우리가 원할때 종료
+		while(true) {
+			System.out.println("Running...");	
+		}
+		
+
+	}
+}

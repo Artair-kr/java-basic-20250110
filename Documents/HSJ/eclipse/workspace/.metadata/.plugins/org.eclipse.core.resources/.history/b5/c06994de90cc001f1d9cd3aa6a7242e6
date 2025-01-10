@@ -1,0 +1,18 @@
+package chapter03;
+
+import java.util.Random;
+
+public class R_Random2 {
+	public static void main(String[] args) {
+		// SEED 지정
+		Random random = new Random();
+		random = new Random(100);
+		System.out.println(random.nextInt());
+		System.out.println(random.nextInt());
+
+		Random random1 = new Random(1);
+		Random random2 = new Random(1);
+		System.out.println(random1.nextInt()); // 출력:  -1155869325
+		System.out.println(random2.nextInt()); // 출력:  -1155869325
+	}
+}

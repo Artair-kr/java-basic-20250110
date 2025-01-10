@@ -1,0 +1,9 @@
+package com.korit.crud;
+
+public class CrudApplication {
+
+	public static void main(String[] args) {
+		System.out.println("Running...");
+
+	}
+}

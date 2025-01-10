@@ -1,0 +1,13 @@
+package chapter03;
+
+import java.util.Random;
+
+public class R_Random {
+	public static void main(String[] args) {
+		
+		Random random1 = new Random();
+		Random random2 = new Random();
+		System.out.println(random1.nextInt()); // 출력:  1791095845
+		System.out.println(random2.nextInt()); // 출력:  1791095845
+	}
+}

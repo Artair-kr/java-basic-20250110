@@ -1,0 +1,34 @@
+package com.korit.crud;
+
+import java.util.Scanner;
+
+import com.korit.crud.controller.AuthController;
+import com.korit.crud.controller.implement.AuthControllerImplement;
+import com.korit.crud.dto.auth.SignUpRequestDto;
+
+public class CrudApplication {
+
+	public static void main(String[] args) {
+		// 구현체
+		AuthController authController = new AuthControllerImplement();
+		
+		// 스케너로 입력 받는다.
+		Scanner scanner = new Scanner(System.in);
+		// 우리가 원할때 종료
+		while(true) {
+			
+			System.out.print("작업 : ");
+			// 문자열 스캐너로 입력받기
+			String request = scanner.nextLine();
+			
+			if(request.equals("exit")) break;
+			
+			if(request.equals("회원가입")){
+				
+				SignUpRequestDto requestDto = new SignUpRequestDto();
+				authController.signUp(requestDto);
+			}
+		}
+		scanner.close();
+	}
+}

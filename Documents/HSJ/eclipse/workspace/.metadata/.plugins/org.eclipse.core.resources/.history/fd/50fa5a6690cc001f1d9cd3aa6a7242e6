@@ -1,0 +1,24 @@
+package chapter03;
+
+import java.util.Random;
+
+public class R_Random {
+	public static void main(String[] args) {
+		
+		// Random 클래스 : 난수를 생성하는 클래스
+		// java.util.Random 이 존재한다.
+		Random random = new Random();
+		System.out.println(random.nextInt());
+		
+		// 범위 제약
+		System.out.println(random.nextInt(5));
+		
+		System.out.println(random.nextInt(5, 10));
+		
+		// SEED 지정
+		random = new Random(1);
+		System.out.println(random.nextInt());
+		System.out.println(random.nextInt());
+		
+	}
+}

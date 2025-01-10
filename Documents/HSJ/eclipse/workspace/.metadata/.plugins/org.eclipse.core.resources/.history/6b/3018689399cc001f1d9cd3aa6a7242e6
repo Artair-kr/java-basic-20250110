@@ -1,0 +1,51 @@
+package chapter03;
+
+import java.util.ArrayList;
+import java.util.List;
+
+// 제너릭 : 클래스나 메서드에서 사용할 데이터 타입을 외부에서 지정하는 방법
+// 
+
+// Test 1,2,3의 문제점
+// 1. 코드 중복 발생 : 유지보수성을 및 개발 속도를 낮춘다.
+// 2. 실사용의 불편 : 사용시 코드가 복잡해진다.
+class Test1{ // 정수형태일때
+	String subject;
+	int score;
+}
+class Test2{ // 실수형태일때
+	String subject;
+	double score;
+}
+class Test3{ // 문자형태일때
+	String subject;
+	char score;
+}
+class Test4{
+	String subject;
+	Object score;
+}
+public class G_Ge {
+	public static void main(String[] args) {
+		
+		List<Test4> tests = new ArrayList<>();
+		Test4 test1 = new Test4();
+		test1.subject = "국어";
+		test1.score = "우수";
+		tests.add(test1);
+		
+		Test4 test2 = new Test4();
+		test2.subject = "수학";
+		test2.score = 100;
+		tests.add(test2);
+		
+		System.out.println(test1.score);
+		System.out.println(test2.score);
+		
+		for(Test4 test: tests) {
+			// ? score = test.score;
+			int score = (int)tests.get(0).score;
+			
+		}
+	}
+}

@@ -1,0 +1,22 @@
+package chapter03;
+
+class B {
+int x = 3;
+int getX() {
+return x * 2;
+}
+}
+class A extends B {
+int x = 7;
+@Override
+int getX() {
+return x * 3;  
+}
+}
+public class Main {
+public static void main(String[] args) {
+B b1 = new A(); // A주소 // B와 A가 상속관계에 있어 괜찮다.
+A b2 = new A(); // A주소
+System.out.print(b1.getX() + b1.x + b2.getX() + b2.x); // 21 + 7 + 21 + 7 = 56
+}
+}

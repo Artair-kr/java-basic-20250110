@@ -1,0 +1,12 @@
+package chapter03;
+
+import java.util.Random;
+
+public class R_Random {
+	public static void main(String[] args) {
+		
+		Random random = new Random();
+		int randomNumber = random.nextInt(100); // 0 ~ 99 사이의 난수를 생성합니다.
+		System.out.println(randomNumber);
+	}
+}

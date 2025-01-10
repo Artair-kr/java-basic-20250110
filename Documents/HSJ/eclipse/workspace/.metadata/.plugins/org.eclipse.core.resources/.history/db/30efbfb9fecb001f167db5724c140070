@@ -1,0 +1,17 @@
+package chapter03;
+
+import java.util.Date;
+
+public class D_LocalDateTime {
+
+	public static void main(String[] args) {
+		// Date 클래스 : 날짜를 다루는 클래스
+		// Date 클래스의 대부분의 메서드는 Java 1.1부터 사용하지 않도록 권장
+		// Date 클래스가 날짜의 데이터 타입으로 자주 사용된다.
+		// 실제 날짜를 관리할땐 문자열이 편하다.
+		// 외부 연결시 문제가 생길 수 있다.
+		
+		Date dateNow = new Date();
+		
+    }
+}

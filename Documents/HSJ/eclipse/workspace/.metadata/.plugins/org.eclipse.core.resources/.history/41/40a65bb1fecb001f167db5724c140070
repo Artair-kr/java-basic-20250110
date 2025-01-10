@@ -1,0 +1,14 @@
+package chapter03;
+
+import java.time.LocalDateTime;
+
+public class D_LocalDateTime {
+
+	public static void main(String[] args) {
+		LocalDateTime now = LocalDateTime.now();
+		int year = now.getYear();
+		int month = now.getMonthValue();
+		int day = now.getDayOfMonth();
+		System.out.println(year + "년 " + month + "월 " + day + "일");
+    }
+}

@@ -1,0 +1,27 @@
+package chapter03;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
+
+public class M_Package3 {
+
+	public static void main(String[] args) {
+		// Map : key와 value가 한 쌍으로 이루어진 요소들의 집합
+		// key(키)는 중복 불가, value(값)는 중복 가능
+		// Map<K, V>
+		Map<String, String> map;
+		
+		// HashMap 구현 클래스 : 검색이 속도가 빠르다.
+		// map = new HashMap<String, String>();
+		map = new HashMap<>();
+		
+		// TreeMap 구현 클래스 : 키를 기준으로 정렬하여 저장한다.
+		// map = new TreeMap<String, String>();
+		map = new TreeMap<String, String>();
+		
+		// put() :  Map에 key와 value의 쌍을 추가
+		map.put("Apple", "사과");
+		System.out.println(map);
+	}
+}

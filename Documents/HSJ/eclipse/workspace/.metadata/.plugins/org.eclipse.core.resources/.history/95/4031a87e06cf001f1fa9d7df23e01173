@@ -1,0 +1,12 @@
+package com.korit.crud.service.implement;
+
+import com.korit.crud.dto.auth.SignUpRequestDto;
+import com.korit.crud.service.AuthService;
+
+public class AuthServiceImplement implements AuthService {
+
+    @Override
+    public void signUp(SignUpRequestDto requestDto) {
+        // 최소한의 구현으로 빨간줄 없애기 (아직 로직을 작성하지 않음)
+    }
+}

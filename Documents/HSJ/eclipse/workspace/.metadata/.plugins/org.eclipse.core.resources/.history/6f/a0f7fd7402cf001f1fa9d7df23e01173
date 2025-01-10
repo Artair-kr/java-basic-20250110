@@ -1,0 +1,8 @@
+package com.korit.crud.service;
+
+// Service : 실제 비즈니스 로직이 구현되는 모듈(레이어)
+// 데이트 검증 
+
+public interface AuthService {
+	
+}

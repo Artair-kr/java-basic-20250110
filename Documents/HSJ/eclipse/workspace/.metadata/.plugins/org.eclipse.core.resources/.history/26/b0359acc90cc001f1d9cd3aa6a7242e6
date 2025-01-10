@@ -1,0 +1,13 @@
+package chapter03;
+
+import java.util.Random;
+
+public class R_Random2 {
+	public static void main(String[] args) {
+		// SEED 지정
+		Random random = new Random();
+		random = new Random(100);
+		System.out.println(random.nextInt());
+		System.out.println(random.nextInt());
+	}
+}

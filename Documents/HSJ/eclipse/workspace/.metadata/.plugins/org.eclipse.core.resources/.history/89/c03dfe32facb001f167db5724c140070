@@ -1,0 +1,36 @@
+package chapter03;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.print.attribute.HashAttributeSet;
+
+public class H_Human {
+
+	public static void main(String[] args) {
+	
+	
+		class Human{
+			String name;
+			String address;
+			int age;
+		}
+	
+		Human human1 =  new Human();
+		human1.name = "이성계";
+		human1.address = "개성";
+		human1.age = 30;
+		// {name = 이성계, address = 개성, age = 30}
+	
+		Map<String, Object> human2 = new HashMap<>();
+		human2.put("name", "이성계");
+		human2.put("address", "개성");
+		human2.put("age", 30);
+		
+		System.out.print(human1.name);
+		System.out.print(human1.address);
+		System.out.println(human1.age);
+		System.out.println(human2);
+	}
+
+}

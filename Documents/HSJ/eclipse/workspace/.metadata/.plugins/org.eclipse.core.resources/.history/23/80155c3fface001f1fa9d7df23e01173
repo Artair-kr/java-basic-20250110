@@ -1,0 +1,25 @@
+package com.korit.crud;
+
+import java.util.Scanner;
+
+public class CrudApplication {
+
+	public static void main(String[] args) {
+		// 스케너로 입력 받는다.
+		Scanner scanner = new Scanner(System.in);
+		// 우리가 원할때 종료
+		while(true) {
+			
+			System.out.print("작업 : ");
+			// 문자열 스캐너로 입력받기
+			String request = scanner.nextLine();
+			
+			if(request.equals("exit")) break;
+			
+			System.out.println("Running...");	
+			
+			
+		}
+		scanner.close();
+	}
+}

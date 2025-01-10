@@ -1,0 +1,21 @@
+package chapter03;
+
+import java.sql.Date;
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.util.*;
+
+public class D_LocalDateTime {
+
+	public static void main(String[] args) {
+		// 현재 날짜와 시간을 가진 LocalDateTime 생성
+        LocalDateTime localDateTime = LocalDateTime.now();
+
+        // LocalDateTime을 Date로 변환
+        java.util.Date date = Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());
+
+        // 결과 출력
+        System.out.println(date);
+    }
+}

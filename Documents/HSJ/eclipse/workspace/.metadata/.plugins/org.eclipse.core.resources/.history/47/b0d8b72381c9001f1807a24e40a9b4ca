@@ -1,0 +1,9 @@
+package chapter02;
+
+public class E_El {
+	public static void main(String[] args) {
+		
+		Occupation occupation = new Occupation(10, 100);
+		
+	}
+}

@@ -1,0 +1,60 @@
+package chapter02;
+
+import javax.swing.text.html.HTMLEditorKit.LinkController;
+
+class Controller{
+	
+	Service service;
+	
+	Controller(Service sevice){
+		this.service = service;
+	}
+	
+	void controllerMethod() {
+		System.out.println("Controller A");
+		service.ServiceMethod();
+	}
+	void controllerMethod2() {
+		System.out.println("Controller A2");
+		service.ServiceMethod2();
+	}
+}
+class Service{
+	
+	// Repository repository = new Repository();
+	Repository repository;
+	
+	Service(Repository repository){
+		this.repository = repository;
+	}
+	void ServiceMethod() {
+		System.out.println("Service A");
+		repository.repositoryMethod();
+	}
+	void ServiceMethod2() {
+		System.out.println("Service A2");
+		repository.repositoryMethod2();
+	}
+}
+class Repository{
+	
+	void repositoryMethod() {
+		System.out.println("Repository A");
+	}
+	void repositoryMethod2() {
+		System.out.println("Repository A2");
+	}
+}
+public class DIP {
+
+	public static void main(String[] args) {
+		
+		Repository repository = new Repository();
+		Service sevice = new Service(repository);
+		Controller controller = new Controller(sevice);
+		
+		controller.controllerMethod();
+		controller.controllerMethod2();
+
+	}
+}

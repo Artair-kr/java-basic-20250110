@@ -1,0 +1,11 @@
+package chapter03;
+
+public class R_Random {
+	public static void main(String[] args) {
+		int Random =  0;
+		Random random1 = new Random(1);
+		Random random2 = new Random(1);
+		System.out.println(random1.nextInt()); // 출력:  1791095845
+		System.out.println(random2.nextInt()); // 출력:  1791095845
+	}
+}

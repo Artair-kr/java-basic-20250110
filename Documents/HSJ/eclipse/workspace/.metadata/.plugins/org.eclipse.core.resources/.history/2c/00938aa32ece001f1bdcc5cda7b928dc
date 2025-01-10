@@ -1,0 +1,15 @@
+package chapter03;
+
+public class Main {
+public static void main(String[] args) {
+int m = 4620;
+int a = m/1000;
+int b = (m%500);
+int c = (m%100)/100;
+int d = (m%10)/100;
+System.out.println(a);
+System.out.println(b);
+System.out.println(c);
+System.out.println(d);
+}
+}

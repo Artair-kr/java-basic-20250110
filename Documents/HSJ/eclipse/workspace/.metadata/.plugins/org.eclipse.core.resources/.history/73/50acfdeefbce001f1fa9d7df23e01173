@@ -1,0 +1,14 @@
+package com.korit.crud.controller.implement;
+
+import com.korit.crud.controller.AuthController;
+import com.korit.crud.dto.auth.SignUpRequestDto;
+
+public class AuthControllerImplement implements AuthController {
+
+
+	@Override
+	public void signUp(SignUpRequestDto requestDto) {
+		String id = requestDto.getId();
+		id.length();
+	}
+}

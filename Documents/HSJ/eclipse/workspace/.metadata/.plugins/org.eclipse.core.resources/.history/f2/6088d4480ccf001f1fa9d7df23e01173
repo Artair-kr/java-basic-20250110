@@ -1,0 +1,5 @@
+package com.korit.crud.entity;
+
+public class UserEntity {
+
+}

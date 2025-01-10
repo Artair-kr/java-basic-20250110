@@ -1,0 +1,5 @@
+package com.korit.crud.repository.implement;
+
+public class UserRepositoryImplement {
+
+}
