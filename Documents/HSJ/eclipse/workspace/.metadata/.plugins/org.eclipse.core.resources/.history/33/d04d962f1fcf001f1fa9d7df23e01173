@@ -16,7 +16,4 @@ public interface UserRepository {
 	// true, false
 	boolean existsById(String id);
 	
-	// 인스턴스 찾아서 확인
-	UserEntity findById(String id);
-	
 }

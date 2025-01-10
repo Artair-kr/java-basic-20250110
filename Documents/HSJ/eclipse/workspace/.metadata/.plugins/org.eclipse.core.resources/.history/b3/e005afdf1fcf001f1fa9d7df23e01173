@@ -74,7 +74,7 @@ public class SignUpRequestDto {
 			System.out.println("Password와 일치하지 않습니다.");
 			return false;
 		}
-		if(nicknameValidate()) {
+		if(!nicknameValidate()) {
 			System.out.println("nickname은 비어있거나 공백만 있다면 구성할 수 없습니다.");
 			return false;
 		}

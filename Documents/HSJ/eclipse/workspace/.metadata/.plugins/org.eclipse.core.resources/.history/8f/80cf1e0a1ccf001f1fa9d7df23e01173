@@ -1,6 +1,5 @@
 package com.korit.crud.controller;
 
-import com.korit.crud.dto.auth.SignInRequestDto;
 import com.korit.crud.dto.auth.SignUpRequestDto;
 
 // Controller : 클라이언트와 서버간의 접점에 해당하는 모듈(레이어)
@@ -15,7 +14,10 @@ public interface AuthController {
 	// 회원가입 기능
 	// 서로 다른 패키지에 있다.
 	void signUp(SignUpRequestDto requestDto);
-	// 로그인
-	void signIn(SignInRequestDto requestDto);
+	// 클라이언트가 서비스에 데이터를 전송(DTO) 아이디, 비밀번호, 비밀번호 확인, 닉네임을 받아온다.
+	// ID PASSWORD PASSWORDCHECK NICKNAME - (String사용)
+	// 위 객체(instance)들을 정의한다.
+	// 입력 객체에 대한 정으를 할려면 class로 만들어줘야한다.
+	// Dto로 이동
 ;
 }

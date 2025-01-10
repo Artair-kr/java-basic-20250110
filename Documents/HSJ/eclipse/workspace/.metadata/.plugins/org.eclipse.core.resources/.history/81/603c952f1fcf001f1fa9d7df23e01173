@@ -18,14 +18,4 @@ public class UserRepositoryImplement implements UserRepository{
 	public void save(UserEntity userEntity) {
 		DATABASE_LIST.add(userEntity);		
 	}
-
-	@Override
-	public UserEntity findById(String id) {
-		// true, false 대신 인스턴스(객체)를 불러오기 위해 return entity;
-		for(UserEntity entity: DATABASE_LIST) {
-			if(entity.getId().equals(id)) return entity;
-		}
-		// 실패하면 빈칸
-		return null;
-	}
 }

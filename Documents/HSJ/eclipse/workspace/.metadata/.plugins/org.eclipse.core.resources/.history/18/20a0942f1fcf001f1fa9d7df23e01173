@@ -1,6 +1,5 @@
 package com.korit.crud.service;
 
-import com.korit.crud.dto.auth.SignInRequestDto;
 import com.korit.crud.dto.auth.SignUpRequestDto;
 
 // Service : 실제 비즈니스 로직이 구현되는 모듈(레이어)
@@ -11,6 +10,4 @@ import com.korit.crud.dto.auth.SignUpRequestDto;
 public interface AuthService {
 	// 회원가입
 	void signUp(SignUpRequestDto requestDto);
-	// 로그인
-	void signIn(SignInRequestDto requestDto);
 }

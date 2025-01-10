@@ -32,7 +32,5 @@ public class AuthControllerImplement implements AuthController {
 			return;
 		}
 		if(!requestDto.validate()) return; // 실패하면 return
-		
-		authService.signIn(requestDto);
 	}
 }
