@@ -1,0 +1,6 @@
+package com.korit.crud.controller;
+
+public interface UserController {
+	// UserService와 동일하게 입력
+	void getSingInUser();
+}

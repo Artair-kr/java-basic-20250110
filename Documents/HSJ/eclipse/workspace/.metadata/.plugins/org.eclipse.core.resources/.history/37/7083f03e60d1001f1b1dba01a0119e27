@@ -1,0 +1,6 @@
+package com.korit.crud.service;
+
+public interface UserService {
+	// 입력이 없어 매개변수 입력 x
+	void getSignInUser();
+}

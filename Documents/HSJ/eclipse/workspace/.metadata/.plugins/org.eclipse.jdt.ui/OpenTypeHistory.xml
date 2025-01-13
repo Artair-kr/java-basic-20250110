@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=crud/src&lt;com.korit.crud.controller{AuthController.java[AuthController" modifiers="513" timestamp="1736476532691"/>
+    <typeInfo handle="=crud/src&lt;com.korit.crud.service{AuthService.java[AuthService" modifiers="513" timestamp="1736483714017"/>
+</typeInfoHistroy>
